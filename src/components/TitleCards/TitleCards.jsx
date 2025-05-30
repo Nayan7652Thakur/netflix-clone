@@ -12,7 +12,7 @@ const TitleCards = ({ title  , category}) => {
   };
 
   useEffect(() => {
-    const apiKey = '4163c9b81ecceaeef09742c9c4c5dd4a';
+    const apiKey = '4163c9b81ecceaeef09742c9c4c5dd4a'
     const url = `https://api.themoviedb.org/3/movie/${category ? category : 'now_playing'}?api_key=${apiKey}&language=en-US&page=1`;
   
     fetch(url)
